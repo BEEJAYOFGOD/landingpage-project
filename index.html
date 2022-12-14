@@ -16,30 +16,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <ul class="left-links">
-        <li>Header</li>
-        <li>Logo</li>
-      </ul>
-      <ul class="right-links">
-        <li>header link one</li>
-        <li>header link two</li>
-        <li>header link three</li>
-      </ul>
-    </header>
+    <section class="hero-section">
+      <header>
+        <ul class="left-links">
+          <li>Header</li>
+          <li>Logo</li>
+        </ul>
+        <ul class="right-links">
+          <li>header link one</li>
+          <li>header link two</li>
+          <li>header link three</li>
+        </ul>
+      </header>
 
-    <section class="awe-section">
-      <article class="awesome-container">
-        <p>This Website is awesome</p>
-        <p>
-          This website has some subtext that goes under the main title.It's a
-          smaller font and color is lower contrast
-        </p>
-        <button>Sign Up</button>
-      </article>
-      <img src="river.avif" alt="ayo" />
+      <section class="awe-section">
+        <article class="awesome-container">
+          <p class="awesome-text">This Website is awesome</p>
+          <p class="awesome-gibberish">
+            This website has some subtext that goes under the main title.It's a
+            smaller font and color is lower contrast
+          </p>
+          <button class="awesome-sign">Sign Up</button>
+        </article>
+        <div class="river">
+          <img src="river.avif" alt="ayo" />
+        </div>
+      </section>
     </section>
-
     <section class="info">
       <h2>Some random information</h2>
       <section class="cards">
@@ -62,17 +65,26 @@
         </div>
       </section>
     </section>
-
     <section id="quote">
       <article class="quote-text">
         This is an inspiring quote, or a testimonial from a customer. maybe it's
         just filling up space, or maybe people will actually read it. Who knows?
         All I know is that it looks nice
+        <div id="quote-author">-Thor, God of Thunder</div>
       </article>
-      <div id="author">-Thor, God of Thunder</div>
     </section>
-
-    <div class="call-action"><p>call to action It's time</p></div>
+    <section class="call-container">
+      <div class="call">
+        <p class="call-text">Call to action! It's time!</p>
+        <br />
+        <p id="sign-up-text">
+          Sign up for our product by clicking that button right over there
+        </p>
+      </div>
+      <div class="sign-up-container">
+        <button class="sign-up">Sign up</button>
+      </div>
+    </section>
     <footer>Copyright The Odin project 2021</footer>
   </body>
 </html>

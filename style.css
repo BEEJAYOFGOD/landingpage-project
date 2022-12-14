@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
+* {
+  font-family: "Roboto Condensed";
+}
 body {
-  height: 100vh;
+  padding: auto;
+  margin: auto;
+}
+
+.hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0px;
-  font-family: "Roboto Condensed", sans-serif;
+  padding: 0 100px 30px;
+  background-color: #1f2937;
 }
 
 header {
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
   align-items: center;
 }
@@ -19,15 +24,21 @@ header {
 .left-links {
   list-style-type: none;
   display: flex;
-  padding: 0 90px;
+  padding: 0 0px;
+  color: aliceblue;
+  font-weight: bolder;
+  align-items: flex-start;
 }
 
 .right-links {
   list-style-type: none;
   display: flex;
   gap: 4px;
-  padding: 0 90px;
+  padding: 0px;
   flex-shrink: 1;
+  font-weight: 100;
+  color: rgba(254, 254, 255, 0.76);
+  align-items: flex-end;
 }
 
 li {
@@ -35,30 +46,23 @@ li {
 }
 
 .left-links > li {
-  margin: 2px;
-}
-
-* {
-  box-sizing: border-box;
+  margin: 4px;
 }
 
 .awesome-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content: center;
   width: 50%;
+  flex-shrink: 0;
+  align-items: flex-start;
 }
 
 .awe-section {
+  padding: 0 0 20px;
   display: flex;
-  border: 1px solid red;
-  padding: 30px 90px;
   justify-content: space-between;
-  border: 1px solid red;
-}
-
-img {
-  width: 50%;
+  margin: 0px;
 }
 
 .class {
@@ -120,17 +124,21 @@ p {
 }
 
 .quote-text {
-  max-width: 50%;
-  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  font-size: 25px;
   color: #1f2937;
+  font-style: italic;
+  font-weight: lighter;
 }
 
-#author {
+#quote-author {
   align-self: flex-end;
-}
-
-* {
-  border: 1px solid red;
+  font-family: "roboto condensed";
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
 }
 
 footer {
@@ -141,4 +149,87 @@ header,
 .awe-section {
   background-color: #1f2937;
   color: aliceblue;
+}
+
+.call-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882f6;
+  padding: 15px 70px;
+  margin: 50px;
+  border-radius: 8px;
+}
+
+.call {
+  padding: 12px 20px;
+  font-family: "Roboto Condensed";
+  font-weight: 800;
+  color: whitesmoke;
+}
+.call-text {
+  display: inline;
+  font-size: 18px;
+}
+
+#sign-up-text {
+  display: inline;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up {
+  background-color: #3882f6;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+
+.awesome-text {
+  font-size: 40px;
+  margin: 0px;
+  text-align: left;
+  font-weight: bolder;
+  font-family: "Roboto Condensed";
+  padding: ;
+}
+
+.awesome-gibberish {
+  text-align: left;
+  max-width: 300px;
+  margin: 0px;
+  padding: 2px;
+}
+
+.awesome-sign {
+  color: aliceblue;
+  background-color: #3882f6;
+  width: 90px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  padding: 6px 0px;
+}
+
+.river {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  min-width: auto;
+  flex-shrink: 2;
+  align-self: flex-end;
+  border-radius: 12px;
 }
