@@ -45,6 +45,26 @@ li {
   margin: 8px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.refs {
+  color: rgba(254, 254, 255, 0.76);
+  transition: padding 0.12s;
+}
+
+.refs:hover {
+  color: #1f2937;
+  background-color: aliceblue;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.right-links > li > a:active {
+  color: red;
+}
+
 .left-links > li {
   margin: 4px;
 }
@@ -224,6 +244,7 @@ header,
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 30px 0px;
 }
 
 img {
