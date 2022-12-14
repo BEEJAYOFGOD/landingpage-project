@@ -213,6 +213,12 @@ header,
   border: 1px solid aliceblue;
   border-radius: 4px;
   padding: 6px 16px;
+  transition: color 0.2s;
+}
+
+.sign-up:hover {
+  background-color: #5984c9;
+  color: aqua;
 }
 
 .awesome-text {
@@ -239,6 +245,12 @@ header,
   font-weight: 700;
   border: none;
   padding: 6px 0px;
+  transition: color 0.4s;
+}
+
+.awesome-sign:hover {
+  color: #3882f6;
+  background-color: aliceblue;
 }
 
 .river {
