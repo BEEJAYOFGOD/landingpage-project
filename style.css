@@ -3,9 +3,15 @@
 * {
   font-family: "Roboto Condensed";
 }
+
+html {
+  min-height: 100%;
+}
+
 body {
   padding: auto;
   margin: auto;
+  min-height: 100%;
 }
 
 .hero-section {
